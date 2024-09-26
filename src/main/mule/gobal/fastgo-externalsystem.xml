@@ -39,11 +39,6 @@ attributes.uriParams.serviceType]]></ee:set-variable>
 				<logger level="INFO" doc:name="Logger" doc:id="de3cc332-c177-492b-9f5c-9925a88cd299" message="Error Occured For FastGo External Service TransactionId: #[attributes.headers.transactionId] error: #[error.errorMessage] Error Type: #[error.errorType]"/>
 				<ee:transform doc:name="Transform Message" doc:id="345087ea-c9ec-431b-b1eb-249dae3bc13e" >
 					<ee:message >
-						<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
----
-{
-}]]></ee:set-payload>
 					</ee:message>
 					<ee:variables >
 						<ee:set-variable variableName="errorMessage" ><![CDATA[%dw 2.0
